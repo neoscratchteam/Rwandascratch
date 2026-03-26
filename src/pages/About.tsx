@@ -29,55 +29,21 @@ const values = [
 
 const aboutData = {
   story: `
-    <strong>NeoScratch</strong> is a Rwanda-based <strong>software development and open-source technology company</strong> focused on building <strong>modern, scalable, and affordable digital solutions</strong> for businesses, startups, and institutions across Rwanda and Africa.
+    <strong>NeoScratch</strong> is a Rwanda-based <strong>software development and open-source technology company</strong> focused on building <strong>modern, scalable, and high-performance digital solutions</strong> for businesses, startups, and institutions across Rwanda and Africa.
     <br/><br/>
-    We design and develop <strong>inventory and stock management systems</strong>, business dashboards, custom web and mobile applications, and open-source tools that help organizations <strong>reduce operational errors, improve efficiency, gain real-time insights, and grow sustainably</strong>.
+    We design and develop a wide range of <strong>custom web and mobile applications</strong>, advanced business automation tools, business analytics platforms, and open-source systems that help organizations <strong>innovate, scale efficiently, and gain real-time insights</strong>.
     <br/><br/>
-    NeoScratch combines <strong>modern technologies</strong> with a deep understanding of local business needs, delivering practical systems that solve real-world challenges in African markets.
+    NeoScratch combines <strong>modern technologies</strong> with a deep passion for digital transformation, delivering state-of-the-art systems that solve modern challenges in the digital era.
   `,
   mission: `
-    To empower businesses in Rwanda and across Africa with <strong>reliable, affordable, and intelligent software solutions</strong> that drive productivity, transparency, and data-driven growth.
+    To empower businesses and individuals in Rwanda and across Africa with <strong>reliable, intelligent, and world-class software solutions</strong> that drive productivity and digital growth in the modern economy.
   `,
   vision: `
-    To become a <strong>leading African software and open-source technology company</strong>, building world-class digital products from Rwanda for global impact.
+    To become a <strong>leading global African software house</strong>, building world-class technology products from Rwanda that set new standards for innovation.
   `,
 };
 
-// Updated testimonials with service type and project link
-const testimonials = [
-  {
-    name: 'Mr. Faustina',
-    role: 'Owner, Private Business',
-    serviceType: 'Business Management System',
-    link: 'https://pixelmartrw.pages.dev',
-    content: 'NeoScratch developed a comprehensive management system for my business. Managing products, branches, and employees has never been easier!',
-    avatar: '/faustin.jpg',
-  },
-  {
-    name: 'Open Future',
-    role: 'Savings Group for Students, Apeki Tumba TSS',
-    serviceType: 'Record Management System',
-    link: 'https://openfuture.pages.dev',
-    content: 'The digital savings management platform has transformed how we track monthly savings and manage our members. Simple and effective!',
-    avatar: '/openfuture.png',
-  },
-  {
-    name: 'Niyonsenga DieuMerci',
-    role: 'Web Designer & Software Developer',
-    serviceType: 'Personal Portfolio Website',
-    link: 'https://dieumerci.pages.dev',
-    content: 'NeoScratch built a professional portfolio that perfectly showcases my skills and experience. The design is clean and fully functional.',
-    avatar: '/kate.jpeg',
-  },
-  // {
-  //   name: 'Jiridasee',
-  //   role: 'Owner, Mixed Shop',
-  //   serviceType: 'SmartStock Management System',
-  //   link: '/projects/jiridasee-smartstock',
-  //   content: 'SmartStock helps us manage different products and inventory seamlessly. It’s perfect for our mixed shop needs. Highly recommended!',
-  //   avatar: 'https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?w=400&h=400&fit=crop&crop=face',
-  // },
-];
+
 
 
 export default function About() {
@@ -175,71 +141,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      {/* Testimonials Section (replaced Team) */}
-      <section className="py-20 bg-secondary/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">What Our Clients Say</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Real feedback from businesses we've helped grow through custom digital solutions.
-            </p>
-          </div>
-
-          {/* Auto-scrolling carousel with pause on hover */}
-          <div className="overflow-hidden">
-            <div className="flex animate-scroll hover:pause-scroll gap-8">
-              {/* Duplicated for seamless infinite scroll */}
-              {[...testimonials, ...testimonials].map((testimonial, index) => (
-                <div
-                  key={index}
-                  className="flex-none w-96 bg-gradient-card p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow"
-                >
-                  <Quote className="h-10 w-10 text-primary/20 mb-6" />
-                  <p className="text-lg text-muted-foreground mb-8 italic">"{testimonial.content}"</p>
-
-                  <div className="flex items-center gap-4 mb-4">
-                    <img
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover"
-                    />
-                    <div>
-                      <h4 className="font-semibold">{testimonial.name}</h4>
-                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                      <p className="text-sm text-primary font-medium">{testimonial.serviceType}</p>
-                    </div>
-                  </div>
-
-                  {testimonial.link && (
-                    <Button variant="link" className="p-0 h-auto" asChild>
-                      <Link to={testimonial.link} className="flex items-center gap-2 text-primary">
-                        View Project <ArrowRight className="h-4 w-4" />
-                      </Link>
-                    </Button>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <style >{`
-            @keyframes scroll {
-              0% { transform: translateX(0); }
-              100% { transform: translateX(-50%); }
-            }
-            .animate-scroll {
-              display: flex;
-              width: max-content;
-              animation: scroll 40s linear infinite;
-            }
-            .hover\\:pause-scroll:hover {
-              animation-play-state: paused;
-            }
-          `}</style>
-        </div>
-      </section>
-
       {/* Leadership Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

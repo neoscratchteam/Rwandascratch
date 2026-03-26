@@ -14,7 +14,7 @@ Website Information:
 Company: ${websiteInfo?.companyName || 'NeoScratch'}
 Description: ${websiteInfo?.description || 'A tech company empowering African youth through technology and innovation'}
 Services: ${websiteInfo?.services?.join(', ') || 'Web Development, Mobile Apps, Training'}
-Contact Email: ${websiteInfo?.contact?.email || 'hello@neoscratch.com'}
+Contact Email: ${websiteInfo?.contact?.email || 'customerservice@neoscratch.com'}
 Phone: ${websiteInfo?.contact?.phone || '+250 788 123 456'}
 Address: ${websiteInfo?.contact?.address || 'Kigali, Rwanda'}
 
@@ -50,6 +50,6 @@ User message: ${message}`;
     return data.candidates?.[0]?.content?.parts?.[0]?.text || 'I apologize, but I cannot provide a response at the moment. Please try again later.';
   } catch (error) {
     console.error('Error calling Gemini API:', error);
-    return 'I apologize, but I cannot provide a response at the moment. Please contact us directly at hello@neoscratch.com for assistance.';
+    return 'I apologize, but I cannot provide a response at the moment. Please contact us directly at customerservice@neoscratch.com for assistance.';
   }
 };

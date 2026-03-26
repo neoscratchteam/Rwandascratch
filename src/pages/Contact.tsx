@@ -102,8 +102,7 @@ ${formData.message}
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
                     <p className="text-muted-foreground">
-                      theodevrwanda@gmail.com<br />
-                      <span className="text-sm">(or)</span> neoscratch@gmail.com
+                      customerservice@neoscratch.com
                     </p>
                   </div>
                 </div>

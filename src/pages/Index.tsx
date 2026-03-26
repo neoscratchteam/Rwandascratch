@@ -157,7 +157,7 @@ const Index = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Contact us at neoscratch@gmail.com or +250 792 734 752 to bring your tech vision to life with NeoScratch’s expanded services.
+            Contact us at customerservice@neoscratch.com or +250 792 734 752 to bring your tech vision to life with NeoScratch’s expanded services.
           </p>
           <div 
             className="flex flex-col sm:flex-row gap-4 justify-center"

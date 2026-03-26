@@ -185,7 +185,7 @@ export default function Events() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight mb-6">Want to Host an Event?</h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Partner with Theogene at theodevrwanda@gmail.com or +250 792 734 752 to organize tech workshops with NeoScratch.
+            Partner with Theogene at customerservice@neoscratch.com or +250 792 734 752 to organize tech workshops with NeoScratch.
           </p>
           <button className="px-8 py-3 bg-white text-primary rounded-lg font-medium hover:bg-white/90">
             Contact Us

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ProjectCarousel } from '@/components/ui/ProjectCarousel';
+import { ProjectStickyStack } from '@/components/ui/ProjectStickyStack';
 
 export default function Projects() {
   return (
@@ -16,8 +16,8 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* Modern Perspective Carousel */}
-      <ProjectCarousel />
+      {/* Modern Perspective Sticky Stack */}
+      <ProjectStickyStack />
 
       {/* Stats Section */}
       <section className="py-20 bg-secondary/30">
