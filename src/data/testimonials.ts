@@ -22,5 +22,13 @@ export const testimonials = [
     link: 'https://dieumerci.pages.dev',
     content: 'NeoScratch built a professional portfolio that perfectly showcases my skills and experience. The design is clean and fully functional.',
     avatar: '/kate.jpeg',
+  },
+  {
+    name: 'Juldas',
+    role: 'CEO & Founder, Tech Solutions',
+    serviceType: 'System Architecture & Development',
+    link: '#',
+    content: 'The technical excellence and dedication shown by NeoScratch is unparalleled. They delivered a high-performance system that perfectly aligns with our growth strategy.',
+    avatar: '/juldas.png',
   }
 ];
