@@ -87,7 +87,8 @@ export default function JoinUs() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="py-24 lg:py-36 relative overflow-hidden bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="absolute inset-0 hero-bg pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl lg:text-6xl font-bold text-foreground tracking-tight mb-6 animate-fade-in">
             Join Our Team
           </h1>

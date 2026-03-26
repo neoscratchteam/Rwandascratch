@@ -181,30 +181,11 @@ export default function Services() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
-        className="py-20 lg:py-32 relative overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(29, 78, 216, 0.8) 50%, rgba(30, 41, 59, 0.9) 100%), url(${servicesBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
-        }}
-        data-aos="zoom-in"
-        data-aos-duration="1200"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 
-            className="text-4xl lg:text-6xl font-bold text-foreground tracking-tight mb-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            Our Services
-          </h1>
-          <p 
-            className="text-xl text-muted-foreground max-w-3xl mx-auto"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
+      <section className="py-24 lg:py-36 relative overflow-hidden bg-background">
+        <div className="absolute inset-0 hero-bg pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h1 className="text-4xl lg:text-6xl font-bold tracking-tight text-foreground mb-6 animate-fade-in">Our Services</h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-slide-up">
             Comprehensive technology solutions to help your business thrive in the digital world.
           </p>
         </div>
